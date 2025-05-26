@@ -22,18 +22,18 @@ permalink: /
 
 ---
 
-> 如不愿折腾，可以直接下载 直播电视app 使用，手机电视都兼容，没有任何广告，完全免费。
+> 如不愿折腾开源项目，推荐直接下载第三方开发的软件 **直播电视**APP 使用，手机电视盒子都兼容，没有广告，完全免费。
 >
-> 直播电视app 下载地址：[https://izbds.com](https://izbds.com/aztv)  （包含港澳台频道），推荐[野草助手](https://www.yecao.net/download/)安装码：0024
+> 直播电视APP 下载地址：[https://izbds.com](https://izbds.com/aztv/)   推荐[野草助手](https://www.yecao.net/download/)安装码：**0024**
 >
-> 软件内包含本仓库所有直播源，还有很多其他直播源，并且每日更新。
+> 软件内包含大量直播源，包含港澳台频道，速度流畅，并且每日多次更新。
 
 ------
 
 
 ### 📡 自动扫描直播源 IPTV4
 
-部署在服务器上的程序自动扫描而来，<!-- UPDATE_TIME_IPTV4 -->本次更新时间: 2025-04-15 18:44:53<!-- END_UPDATE_TIME_IPTV4 -->
+部署在服务器上的程序自动扫描而来，<!-- UPDATE_TIME_IPTV4 -->本次更新时间: 2025-05-26 18:41:50<!-- END_UPDATE_TIME_IPTV4 -->
 
 <table>
   <colgroup>
@@ -48,16 +48,16 @@ permalink: /
   </tr>
   <tr>
     <td>TXT 格式直播源</td>
-    <td><a href="https://live.izbds.com/tv/iptv4.txt">https://live.izbds.com/tv/iptv4.txt</a></td>
-    <td><button class="button" onclick="copyToClipboard('https://live.izbds.com/tv/iptv4.txt')">快速复制</button></td>
+    <td><a href="https://live.zbds.top/tv/iptv4.txt">https://live.zbds.top/tv/iptv4.txt</a></td>
+    <td><button class="button" onclick="copyToClipboard('https://live.zbds.top/tv/iptv4.txt')">快速复制</button></td>
   </tr>
   <tr>
     <td>M3U 格式直播源（已带台标和EPG）</td>
-    <td><a href="https://live.izbds.com/tv/iptv4.m3u">https://live.izbds.com/tv/iptv4.m3u</a></td>
-    <td><button class="button" onclick="copyToClipboard('https://live.izbds.com/tv/iptv4.m3u')">快速复制</button></td>
+    <td><a href="https://live.zbds.top/tv/iptv4.m3u">https://live.zbds.top/tv/iptv4.m3u</a></td>
+    <td><button class="button" onclick="copyToClipboard('https://live.zbds.top/tv/iptv4.m3u')">快速复制</button></td>
   </tr>
 </table>
-*有地方的宽带运营商已经污染本站域名了，如果你打开失败，请使用加速地址访问*
+*如果你打不开github域名，请使用加速地址访问，加速地址也失效了？那就在找一个*
 
 ```
 https://gh-proxy.com/raw.githubusercontent.com/vbskycn/iptv/refs/heads/master/tv/iptv4.txt
@@ -72,7 +72,7 @@ https://gh-proxy.com/raw.githubusercontent.com/vbskycn/iptv/refs/heads/master/tv
 
 ### 📡 自动扫描直播源 IPTV6
 
-部署在服务器上的程序自动扫描而来，<!-- UPDATE_TIME_IPTV6 -->本次更新时间: 2025-04-15 18:44:53<!-- END_UPDATE_TIME_IPTV6 -->
+部署在服务器上的程序自动扫描而来，<!-- UPDATE_TIME_IPTV6 -->本次更新时间: 2025-05-26 18:41:50<!-- END_UPDATE_TIME_IPTV6 -->
 
 *有ipv6环境的强烈推荐这个列表，高速稳定*
 
@@ -91,13 +91,13 @@ https://gh-proxy.com/raw.githubusercontent.com/vbskycn/iptv/refs/heads/master/tv
   </tr>
   <tr>
     <td>TXT 格式直播源</td>
-    <td><a href="https://live.izbds.com/tv/iptv6.txt">https://live.izbds.com/tv/iptv6.txt</a></td>
-    <td><button class="button" onclick="copyToClipboard('https://live.izbds.com/tv/iptv6.txt')">快速复制</button></td>
+    <td><a href="https://live.zbds.top/tv/iptv6.txt">https://live.zbds.top/tv/iptv6.txt</a></td>
+    <td><button class="button" onclick="copyToClipboard('https://live.zbds.top/tv/iptv6.txt')">快速复制</button></td>
   </tr>
   <tr>
     <td>M3U 格式直播源（已带台标和EPG）</td>
-    <td><a href="https://live.izbds.com/tv/iptv6.m3u">https://live.izbds.com/tv/iptv6.m3u</a></td>
-    <td><button class="button" onclick="copyToClipboard('https://live.izbds.com/tv/iptv6.m3u')">快速复制</button></td>
+    <td><a href="https://live.zbds.top/tv/iptv6.m3u">https://live.zbds.top/tv/iptv6.m3u</a></td>
+    <td><button class="button" onclick="copyToClipboard('https://live.zbds.top/tv/iptv6.m3u')">快速复制</button></td>
   </tr>
 </table>
 
@@ -129,69 +129,22 @@ https://gh-proxy.com/raw.githubusercontent.com/vbskycn/iptv/refs/heads/master/tv
 
 
 
-### 🌐 EPG 接口地址
-
-**支持diyp、百川、Xml、直接写下面的url即可**
-
-```
-xmltv 接口： https://epg.zbds.top/index.php
-DIYP&百川 接口： https://epg.zbds.top/index.php?ch=CCTV1
-超级直播 接口： https://epg.zbds.top/index.php?channel=CCTV1
-
-
-https://epg.zbds.top/
-https://epg.zbds.top/t.xml
-https://epg.zbds.top/t.xml.gz
-```
-
-（如果可以请使用112114或51zmt的。因112114很多地方不能访问，所以新增镜像站，请轻量使用）
-
-
-
-### 🎨 增加台标
-
-使用路径 https://live.izbds.com/logo/频道名.png
-
-- 示例： [https://live.izbds.com/logo/CCTV1.png](https://live.izbds.com/logo/CCTV1.png)
-
-
-
-
-
-### 📱 直播电视
+### 📱 直播电视APP
 如果你不愿意折腾，这里有折腾好的可直接使用的直播电视软件
 
-稳定版
+最新稳定版
 
-- 下载链接： [https://izbds.com](https://izbds.com/aztv)  （包含港澳台）
-
-优化版
-
-- 如果显示链接失败，请下载[最新版](https://izbds.com/aztv)试试（2025.2.5）
-
-
-
-
-### 📝 说明
-
-- 所有播放源均收集于互联网，仅供测试研究使用，不得商用。
-- 本项目不存储任何的流媒体内容，所有的法律责任与后果应由使用者自行承担。
-- 您可以 Fork 本项目，但引用本项目内容到其他仓库的情况，务必要遵守开源协议。
-- 本项目不保证直播频道的有效性，直播内容可能受直播服务提供商因素影响而失效。
-- 所有文件均托管在 [GitHub](https://github.com/vbskycn/iptv) 且自动构建，由项目发起人公益维护，欢迎 Star 本项目或点击 [Issues](https://github.com/vbskycn/iptv/issues/new/choose) 反馈您的问题。
-- 本项目部分内容基于[fanmingming](https://github.com/fanmingming/live)大佬的项目和网络收集而来。
+- 下载链接： [https://izbds.com](https://izbds.com/aztv/)  （包含港澳台）
 
 
 
 ### 📅 更新
 
-- 2025.2.28 重新部署epg服务
+- 2025.5.20 不提供epg服务
 - 2025.1.11 优化页面
-- 2025.1.7 增加台标接口
 - 2024.12.13 跟着节奏继续优化
 - 2024.10.18 优化测试有效源代码
 - 2024.9.9 直播源失效速度太快，新添加deibian服务器，每日三次更新
-- 2024.7.21 新增epg接口地址
 - 2024.6.22 新增 IPTV4/IPTV6 自动更新源
 
 
@@ -205,9 +158,31 @@ https://epg.zbds.top/t.xml.gz
 </div>
 
 
+### 📝 免责声明
+
+- 本项目仅作为技术研究用途，用于学习和交流。所有内容均收集自互联网公开链接，严禁用于任何商业用途，包括但不限于商业直播、商业推广等。
+
+- 本项目不存储任何的流媒体内容，所有直播源均由第三方提供，本项目不对其内容负责，不保证直播源的可用性、稳定性和合法性，所有的法律责任与后果应由使用者自行承担。
+
+- 本项目采用开源协议发布，您可以 Fork 本项目，但引用本项目内容到其他仓库的情况，务必要遵守开源协议，必须注明来源。
+
+- 本项目不保证直播频道的有效性，直播内容可能受直播服务提供商因素影响而失效。
+
+- 本项目由社区维护，所有文件均托管在 [GitHub仓库](https://github.com/vbskycn/iptv) 且自动构建，由项目发起人公益维护，欢迎 Star 本项目或点击 [Issues](https://github.com/vbskycn/iptv/issues/new/choose) 反馈您的问题。
+
+- 本项目部分内容基于[fanmingming](https://github.com/fanmingming/live)大佬的项目和网络收集而来。
+
+- 本项目维护者保留随时修改或终止项目的权利，且最终解释权归项目维护者所有。
+
+- 使用本项目即表示您已阅读并同意本免责声明，如不同意本声明，请立即停止使用本项目，本项目保留随时更新免责声明的权利
+
+  
+
 ### 🎁 欢迎请我喝杯饮料
 
 ![请我喝杯饮料](assets/wxds.png)
+
+
 
 ### 📊 Star History
 
