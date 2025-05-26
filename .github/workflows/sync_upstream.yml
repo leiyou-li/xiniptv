@@ -1,0 +1,45 @@
+name: Sync with Upstream
+
+on:
+  schedule:
+    - cron: '0 */6 * * *'  # Run every 6 hours
+  workflow_dispatch:  # Allow manual trigger
+
+jobs:
+  sync-upstream:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+          
+      - name: Configure Git
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          
+      - name: Add upstream remote
+        run: |
+          git remote add upstream https://github.com/vbskycn/iptv.git
+          
+      - name: Fetch upstream
+        run: |
+          git fetch upstream
+          
+      - name: Merge upstream changes
+        run: |
+          git merge upstream/master --allow-unrelated-histories
+          
+      - name: Run sync_live_list workflow
+        uses: peter-evans/repository-dispatch@v2
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          event-type: sync_live_list
+          
+      - name: Push changes
+        run: |
+          git push origin master
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} 
