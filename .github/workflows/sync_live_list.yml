@@ -11,6 +11,7 @@ jobs:
     runs-on: ubuntu-latest
 
     env:
+      GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       MY_GITHUB_TOKEN: ${{ secrets.MY_GITHUB_TOKEN }}
 
     steps:
@@ -34,6 +35,8 @@ jobs:
         run: |
           cd tv
           python syn_live_list.py
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
       - name: 列出生成的文件
         run: |
@@ -55,4 +58,4 @@ jobs:
           git commit -m "Sync live list $(TZ=Asia/Shanghai date '+%Y-%m-%d %H:%M:%S')"
           git push
         env:
-          GITHUB_TOKEN: ${{ secrets.MY_GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
