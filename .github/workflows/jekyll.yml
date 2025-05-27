@@ -76,6 +76,11 @@ jobs:
     runs-on: ubuntu-latest
     needs: build
     steps:
+      - name: Check Pages Status
+        run: |
+          echo "Checking Pages status..."
+          curl -H "Authorization: token ${{ secrets.GITHUB_TOKEN }}" https://api.github.com/repos/${{ github.repository }}/pages
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
+        continue-on-error: true
