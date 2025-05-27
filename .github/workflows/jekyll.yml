@@ -44,6 +44,12 @@ jobs:
         run: |
           gem install bundler
           bundle install
+      - name: Debug Repository Info
+        run: |
+          echo "Repository: ${{ github.repository }}"
+          echo "Event name: ${{ github.event_name }}"
+          echo "Ref: ${{ github.ref }}"
+          echo "SHA: ${{ github.sha }}"
       - name: Setup Pages
         id: pages
         uses: actions/configure-pages@v5
