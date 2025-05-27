@@ -34,8 +34,6 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
-        with:
-          token: ${{ secrets.PAT_TOKEN }}
       - name: Setup Ruby
         uses: ruby/setup-ruby@v1
         with:
@@ -52,7 +50,6 @@ jobs:
         with:
           enablement: true
           static_site_generator: jekyll
-          token: ${{ secrets.PAT_TOKEN }}
       - name: Build with Jekyll
         # Outputs to the './_site' directory by default
         run: bundle exec jekyll build --baseurl "${{ steps.pages.outputs.base_path }}"
@@ -73,5 +70,3 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
-        with:
-          token: ${{ secrets.PAT_TOKEN }}
